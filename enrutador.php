@@ -1,24 +1,31 @@
 <?php
 
-class Enrutador{
+interface IEnrutador{
 
-    private $controlador;
-    private $metodo;
+    public static function inicializar();
 
-    public function __construct() {
+}
 
-        $this->buscarRuta();
+class Enrutador implements IEnrutador{
+
+    private static $controlador;
+    private static $metodo;
+
+    public static function inicializar() {
+
+        self::buscarRuta();
+        self::ejecutar();
 
     }
 
-    public function buscarRuta(){
+    private static function  buscarRuta(){
 
         $url = explode('/', URL);
         $nombreControlador = 'controlador';
-        $this->metodo = !empty($url[0]) ? $url[0] : 'inicio';
-        $this->controlador = $nombreControlador . "Pagina";
+        self::$metodo = !empty($url[0]) ? $url[0] : 'inicio';
+        self::$controlador = $nombreControlador . "Pagina";
         
-        $ruta = __DIR__.'/controladores/'.$this->controlador.'.php';
+        $ruta = __DIR__.'/controladores/'.self::$controlador.'.php';
 
         if (!file_exists($ruta)) {
             die("Error: El archivo del controlador no existe ($ruta)");
@@ -28,10 +35,10 @@ class Enrutador{
 
     }
 
-    public function ejecutar(){
+    private static function ejecutar(){
 
-        $controlador = new $this->controlador();
-        $metodo = $this->metodo;
+        $controlador = new self::$controlador();
+        $metodo = self::$metodo;
 
         $controlador->$metodo();
 
