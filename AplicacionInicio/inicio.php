@@ -1,5 +1,5 @@
 <?php
 
-include "componentes/tabla dinamica/tabla.php";
+include "componentes/formulario/formulario_ej.php";
 
 ?>
