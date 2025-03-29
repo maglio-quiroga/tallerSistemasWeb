@@ -6,7 +6,7 @@ class ControladorPagina{
 
     public function inicio(){
 
-        echo "Esta es la pagina principal.";
+        include $_SERVER['DOCUMENT_ROOT'] . '/tallerSistemasWeb/AplicacionInicio/inicio.php';
 
     }
 
