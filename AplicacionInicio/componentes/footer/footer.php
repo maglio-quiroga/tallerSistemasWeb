@@ -1,14 +1,5 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <link rel="stylesheet" href="footer_style.css">
-    <title>Footer Turismo</title>
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-</head>
-<body>
 
+<div>
     <h1>Bienvenido a Destinos Mágicos ✈️🏝️</h1>
     <p>Explora el mundo con nosotros y descubre paraísos escondidos.</p>
 
@@ -28,19 +19,8 @@
     </footer>
 
     <button id="backToTop">⬆</button>
-
+</div>
     <script>
-        //particulas
-        particlesJS("particles-js", {
-            particles: {
-                number: { value: 100 },
-                shape: { type: "circle" },
-                move: { speed: 2 },
-                size: { value: 3 },
-                line_linked: { enable: true, opacity: 0.3 }
-            }
-        });
-
         //volver arriba
         const backToTopButton = document.getElementById("backToTop");
 
@@ -56,6 +36,3 @@
             window.scrollTo({ top: 0, behavior: "smooth" });
         });
     </script>
-
-</body>
-</html>
