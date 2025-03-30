@@ -6,7 +6,7 @@ class ControladorPagina{
 
     public function inicio(){
 
-        include $_SERVER['DOCUMENT_ROOT'] . '/tallerSistemasWeb/AplicacionInicio/inicio.php';
+        include $_SERVER['DOCUMENT_ROOT'] . "/tallerSistemasWeb/AplicacionInicio/inicio.php";
 
     }
 
