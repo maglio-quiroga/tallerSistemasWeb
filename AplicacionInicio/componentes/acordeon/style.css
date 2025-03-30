@@ -1,0 +1,48 @@
+
+/* Cargar Fahkwang: Bold(700) */
+@import url("https://fonts.googleapis.com/css2?family=Fahkwang:wght@700&display=swap");
+/* Cargar DMSans: Regular(400), Bold(700) */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap");
+
+body {
+    background-color: #f1eeea;
+    font-family: "DM Sans", sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    margin: auto;
+    width: 80%;
+    padding-top: 50px;
+}
+
+.faqs .faq .head {
+    display: flex;
+    padding: 25px 0px;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+h2 {
+    font-family: "Fahkwang", sans-serif;
+}
+
+.faqs .faq .head svg {
+    transition: transform 0.25s ease-in;
+}
+
+.faqs .faq .content {
+    height: 0px;
+    overflow-y: hidden;
+    transition: height 0.25s ease-in;
+    border-bottom: 1px solid #afafaf;
+}
+
+/* Cuando esta activo */
+.faqs .faq.active .head svg {
+    transform: rotate(180deg);
+}
