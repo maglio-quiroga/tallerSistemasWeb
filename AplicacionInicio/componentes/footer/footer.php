@@ -1,12 +1,4 @@
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Arial', sans-serif;
-            background: #f0f8ff;
-            color: #333;
-            min-height: 2000px;
-        }
-        
+    <style>        
         .main-content {
             padding: 50px 20px;
             text-align: center;
@@ -120,45 +112,4 @@
     <button id="backToTop">↑</button>
 
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script>
-        //configuracion para mejores particulas
-        particlesJS("particles-js", {
-            particles: {
-                number: { value: 80 },
-                color: { value: "#ffffff" },    
-                shape: { type: "circle" },
-                opacity: { value: 0.7 },
-                size: { value: 4 },
-                line_linked: {
-                    enable: true,
-                    distance: 150,
-                    color: "#ffffff",
-                    opacity: 0.4,
-                    width: 1
-                },
-                move: {
-                    enable: true,
-                    speed: 2,
-                    direction: "none",
-                    random: true,
-                    straight: false,
-                    out_mode: "out"
-                }
-            },
-            interactivity: {
-                detect_on: "canvas",
-                events: {
-                    onhover: { enable: true, mode: "repulse" }
-                }
-            }
-        });
-
-        //boton para arriba
-        const backToTop = document.getElementById('backToTop');
-        window.addEventListener('scroll', () => {
-            backToTop.style.display = window.scrollY > 300 ? 'block' : 'none';
-        });
-        backToTop.addEventListener('click', () => {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
-    </script>
+    <script src="/static/js/footer.js"></script>
