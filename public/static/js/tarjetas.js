@@ -5,21 +5,21 @@ const Products =
         name: 'Paquete Tursitico a Bahia Inglesa',
         price: '40.000',
         description: 'alimnetacion y transporte',
-        image: ''
+        image: '/static/img/card1.jpg'
     },
     {
         id:2,
         name: 'Paquete de viaje a Valparaiso',
         price: '150.000',
         description: '14 dias y 15 noches',
-        image: ''
+        image: '/static/img/card2.jpg'
     },
     {
         id:3,
         name: 'Paquete de viaje a Castro',
         price: '200.000',
         description: '20 dias y 19 noches',
-        image: ''
+        image: '/static/img/card3.jpg'
     },
 ]
 

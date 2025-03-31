@@ -1,6 +1,7 @@
 
+
 <header class="header">
-    <a href="#" class="logo">Logo</a>
+    <a href="#"><img src="/static/img/logosistemasweb.png" style="height: 60px;" alt="logo de la pagina"></a>
     <nav class="navbar">
       <a href="#">Inicio</a>
       <a href="#">Nosotros</a>

@@ -1,5 +1,5 @@
 <div class="container">
-      <h2>ACLAREMOS TUS DUDAS</h2>
+      <h2 style="color:#416788;">ACLAREMOS TUS DUDAS</h2>
       <div class="faqs">
         <div class="faq">
           <div class="head">
