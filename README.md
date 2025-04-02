@@ -1,0 +1,2 @@
+-> Creacion de una pagina web con archivos estaticos con el fin de practicar elementos claves de JavaScript gestionado mediante un router en php.
+-> Tecnologias : html, css , js, php
